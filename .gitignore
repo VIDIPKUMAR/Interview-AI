@@ -27,11 +27,11 @@ pythonenv*
 logs/
 *.log
 
-# Data files (if you don't want to commit data)
+# Data files
 data/
 exports/
 
-# Model files (if they're large)
+# Model files
 *.h5
 *.pkl
 *.joblib
@@ -42,10 +42,27 @@ venv/
 env/
 myenv/
 
-# Frontend - Node.js dependencies and build files
+# Node.js - CRITICAL: Exclude all node_modules
 node_modules/
+**/node_modules/
 frontend/node_modules/
+backend/node_modules/
+*.node
+
+# Next.js build files
+.next/
+**/.next/
 frontend/.next/
-frontend/out/
-frontend/build/
-frontend/dist/
+out/
+build/
+dist/
+
+# Cache files
+.cache/
+**/.cache/
+frontend/.next/cache/
+
+# Large binary files
+*.wasm
+*.map
+*.pack.gz
