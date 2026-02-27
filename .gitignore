@@ -66,3 +66,12 @@ frontend/.next/cache/
 *.wasm
 *.map
 *.pack.gz
+
+# Sensitive files
+.env
+*.env
+update_env.py
+*_key*.py
+*secret*.py
+*credential*.py
+config.py
